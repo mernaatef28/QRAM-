@@ -2,7 +2,7 @@ from qiskit import *
     
 def QRAM_circuit(n,m):
     A=QuantumRegister(n,"A")
-    D=QuantumRegister(n,"D")
+    D=QuantumRegister(m,"D")
     dq=QuantumRegister(1,"dq")
     qy=QuantumRegister(n+m,"qy")
     r=QuantumRegister(1,"r")   
