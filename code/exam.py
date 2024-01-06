@@ -21,8 +21,12 @@ def QRAM_circuit(n,m):
     QRAM.cx(qy[:n:],A)
     QRAM.x(A)
     QRAM.mct(A,dq)
+    QRAM.x(r)
     for i in range(m):
         QRAM.cswap(dq,D[i],qy[i+n])
+        QRAM.cswap(r,D[i],qy[i+n])
+        QRAM.cswap(dq,D[i],qy[i+n])
+    QRAM.x(r)
     for i in range(m):    
        QRAM.ccx(D[i],dq[0],qy[i+n])
        QRAM.cx(r,qy[i+n])
@@ -32,9 +36,7 @@ def QRAM_circuit(n,m):
     for i in range(n):
         QRAM.x(A[i])
         QRAM.cx(qy[i],A[i])
-        
-        
-   
+    
     return QRAM
 vico=QRAM_circuit(3,3)
 vico.draw(output="mpl")
