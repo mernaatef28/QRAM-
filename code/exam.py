@@ -38,5 +38,12 @@ def QRAM_circuit(n,m):
         QRAM.cx(qy[i],A[i])
     
     return QRAM
-vico=QRAM_circuit(3,3)
-vico.draw(output="mpl")
+circuit=QRAM_circuit(3,3)
+line_colours = {
+    "linecolor": "white", 
+    "backgroundcolor": "#2A283D",
+      "textcolor": "white"
+    
+    
+}
+circuit.draw(output="mpl",fold=1,style=line_colours)
