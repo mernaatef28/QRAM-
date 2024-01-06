@@ -1,5 +1,5 @@
 from qiskit import *
-    
+
 def QRAM_circuit(n,m):
     A=QuantumRegister(n,"A")
     D=QuantumRegister(m,"D")
@@ -41,7 +41,7 @@ def QRAM_circuit(n,m):
 circuit=QRAM_circuit(3,3)
 line_colours = {
     "linecolor": "white", 
-    "backgroundcolor": "#2A283D",
+    "backgroundcolor": "#1F1E2C",
       "textcolor": "white"
     
     
