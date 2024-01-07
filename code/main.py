@@ -52,4 +52,5 @@ line_colours = {
       "textcolor": "white"
 }
 
+
 circuit.draw(output="mpl", fold=1, style=line_colours)
