@@ -51,6 +51,6 @@ line_colours = {
     "backgroundcolor": "#1F1E2C",
       "textcolor": "white"
 }
-
+    
 
 circuit.draw(output="mpl", fold=1, style=line_colours)
