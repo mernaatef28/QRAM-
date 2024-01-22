@@ -7,16 +7,12 @@ def QRAM_circuit(n,m):
     qy = qk.QuantumRegister(n+m,"qy")
     r = qk.QuantumRegister(1,"r")   
     QRAM = qk.QuantumCircuit(A,D,dq,qy,r)
-
     address_A = [int (i) for i in range(n)]
-    
     for i in range(n):
         QRAM.initialize([1,0],A[i])
         QRAM.initialize([1,0],D[i])
-
     for i in range(n+m):
         QRAM.initialize([1,0],qy[i])
-     
     QRAM.initialize([1,0],dq)
     QRAM.initialize([1,0],r)
     QRAM.h(address_A)
@@ -24,14 +20,12 @@ def QRAM_circuit(n,m):
     QRAM.x(A)
     QRAM.mct(A,dq)
     QRAM.x(r)
-    
     for i in range(m):
         QRAM.cswap(dq,D[i],qy[i+n])
         QRAM.cswap(r,D[i],qy[i+n])
         QRAM.cswap(dq,D[i],qy[i+n])
 
     QRAM.x(r)
-
     for i in range(m):    
         QRAM.ccx(D[i],dq[0],qy[i+n])
         QRAM.cx(r,qy[i+n])
