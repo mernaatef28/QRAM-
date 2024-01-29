@@ -11,13 +11,13 @@ def QRAM_circuit(n,m):
     QRAM = qk.QuantumCircuit(A,D,dq,qy,r)
     multible_controled_NOT_gate3  = MCXGate(3)
 
-    for i in range(n):
-        QRAM.initialize([1,0],A[i])
-        QRAM.initialize([1,0],D[i])
-    for i in range(n+m):
-        QRAM.initialize([1,0],qy[i])
-    QRAM.initialize([1,0],dq)
-    QRAM.initialize([1,0],r)
+    # for i in range(n):
+    #     QRAM.initialize([1,0],A[i])
+    #     QRAM.initialize([1,0],D[i])
+    # for i in range(n+m):
+    #     QRAM.initialize([1,0],qy[i])
+    # QRAM.initialize([1,0],dq)
+    # QRAM.initialize([1,0],r)
     QRAM.h(A)
     QRAM.cx(qy[:n:],A)
     QRAM.x(A)
