@@ -7,7 +7,7 @@ def QRAM_circuit(n,m):
     D = qk.QuantumRegister(m,"D")
     dq = qk.QuantumRegister(1,"dq")
     qy = qk.QuantumRegister(n+m,"qy")
-    r = qk.QuantumRegister(1,"r")   
+    r = qk.QuantumRegistear(1,"r")
     QRAM = qk.QuantumCircuit(A,D,dq,qy,r)
     multible_controled_NOT_gate3  = MCXGate(3)
 
