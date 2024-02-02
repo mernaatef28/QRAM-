@@ -34,7 +34,54 @@ To integrate QRAM into your quantum computing projects, follow these steps:
    ```bash
    git clone https://github.com/VICONISEM/Quantum-Random-Access-Memory-QRAM
    cd Quantum-Random-Access-Memory-QRAM
+## Usage
+### Usage of visualize_circuit code
+
+To visualize the Quantum RAM circuit, follow these steps:
+
+1. **Installation:** Ensure you have Qiskit installed. If not, run the following command to install the required dependencies:
+
+    ```bash
    pip install -r requirements.txt
+    ```
+
+2. **Run the Script:** Execute the Python script and pass the number of address qubits (n) and data qubits (m) as arguments. This will simulate the Quantum RAM circuit and display the resulting circuit diagram.
+   
+
+    
+
+   
+
+3. **Interpret the Results:** The script will generate and display a circuit diagram using Qiskit's visualization tools. Analyze the diagram to understand the read or write operations performed by the Quantum RAM circuit.<br>
+   **example <br>
+   if n and m  equal to 3 the result will be like this:**
+   ![QRAM circuit](out-put/output.png)
+   
+### Usage of operations_on circuit code
+
+To visualize the Quantum RAM circuit, follow these steps:
+
+1. **Installation:** Ensure you have Qiskit installed. If not, run the following command to install the required dependencies:
+
+    ```bash
+   pip install -r requirements.txt
+    ```
+
+2. **Run the Script:** Execute the Python script and pass the address and data in binary representation. This will simulate the Quantum RAM circuit and display the resulting circuit diagram.
+   
+
+    
+
+   
+
+3. **Interpret the Results:** The script will generate and display a circuit diagram using Qiskit's visualization tools. Analyze the diagram to understand the read or write operations performed by the Quantum RAM circuit.<br>
+   **example <br>
+   if data is =101 and address is = 011 the result will be like this:**
+   ![QRAM circuit](out-put/output.png)
+   
+
+Feel free to customize the script parameters and usage instructions based on your project's requirements.
+
 
 
 
