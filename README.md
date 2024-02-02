@@ -77,7 +77,7 @@ To visualize the Quantum RAM circuit, follow these steps:
 3. **Interpret the Results:** The script will generate and display a circuit diagram using Qiskit's visualization tools. Analyze the diagram to understand the read or write operations performed by the Quantum RAM circuit.<br>
    **example <br>
    if data is =101 and address is = 011 the result will be like this:**
-   ![QRAM circuit](out-put/output.png)
+   ![QRAM circuit](out-put/output_operation.png)
    
 
 Feel free to customize the script parameters and usage instructions based on your project's requirements.
