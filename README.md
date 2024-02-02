@@ -2,7 +2,7 @@
 
 <p align="center"><img src="https://socialify.git.ci/VICONISEM/Quantum-Random-Access-Memory-QRAM/image?description=1&amp;descriptionEditable=Quantum%20RAM%20(QRAM)%20is%20a%20pioneering%20project%20in%20quantum%20computing%20that%20introduces%20a%20novel%20approach%20to%20efficient%20and%20scalable%20data%20storage&amp;forks=1&amp;issues=1&amp;language=1&amp;name=1&amp;owner=1&amp;pulls=1&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
 
-<p id="description">Quantum RAM (QRAM) is a pioneering project in quantum computing that introduces a novel approach to efficient and scalable data storage. Utilizing the principles of quantum mechanics QRAM represents a significant advancement in memory storage for quantum applications.</p>
+<p id="description">Quantum RAM (QRAM) is a pioneering project in  quantum computing that introduces a novel approach to efficient and scalable data storage. Utilizing the principles of quantum mechanics QRAM represents a significant advancement in memory storage for quantum applications.</p>
 
 ## Overview
 
