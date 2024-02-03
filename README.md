@@ -23,6 +23,7 @@ Incorporating insights from the paper titled "Advancements in Quantum RAM: A Com
 - **Quantum Superposition:** Exploiting the quantum superposition principle for simultaneous storage of multiple states.
 - **Entanglement for Redundancy:** Utilizing entanglement for redundancy, enhancing error correction capabilities.
 - **Dynamic Resource Allocation:** Implementing dynamic resource allocation for optimal qubit utilization.
+- the link of paper: https://ieeexplore.ieee.org/document/9568972?denied=
 
 ## Getting Started
 
